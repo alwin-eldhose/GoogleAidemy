@@ -14,6 +14,13 @@ print(f"--------------------------->Instance connection name: {instance_connecti
 
 
 def connect_with_connector() -> sqlalchemy.engine.base.Engine:
+    """
+    Connect to the database using Cloud SQL Connector.
+
+    This function establishes a secure connection to the Cloud SQL database
+    using the Cloud SQL Connector. 
+    
+    """
 
     db_user = os.environ["DB_USER"]
     db_pass = os.environ["DB_PASS"]
