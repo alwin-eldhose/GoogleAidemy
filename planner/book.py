@@ -8,16 +8,16 @@ BOOK_PROVIDER_URL =  os.environ.get("BOOK_PROVIDER_URL")
 
 def recommend_book(query: str):
     """
-    Get a list of recommended book from an API endpoint
+    Get a list of recommended books from an API endpoint
     
     Args:
         query: User's request string
     """
 
-    region = get_next_region();
+    region = get_next_region(); 
     llm = VertexAI(model_name="gemini-1.5-pro", location=region)
 
-    query = f"""The user is trying to plan a education course, you are the teaching assistant. Help define the category of what the user requested to teach, respond the categroy with no more than two word.
+    query = f"""The user is trying to plan a education course, you are the teaching assistant. Help define the category of what the user requested to teach, respond the category with no more than two words.
 
     user request:   {query}
     """
