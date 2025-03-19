@@ -16,7 +16,8 @@ def search_latest_resource(search_text: str, curriculum: str, subject: str, year
     Get latest information from the internet
     
     Args:
-        search_text: User's request category   string
+        search_text: "User's request category" string
+        curriculum: "User's request curriculum" string
         subject: "User's request subject" string
         year: "User's request year"  integer
     """
