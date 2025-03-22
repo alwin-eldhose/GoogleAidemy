@@ -46,7 +46,7 @@ async def process_weeks(teaching_plan: str):
         for week in range(1, 4):  
             response = client.models.generate_content(
                 model="gemini-2.0-flash-001",
-                contents=f"Given the following teaching plan: {teaching_plan}, Extrace content plan for week {week}. And return just the plan, nothingh else  " # Clarified prompt
+                contents=f"Given the following teaching plan: {teaching_plan}, Extract content plan for week {week}. And return just the plan, nothing else  " # Clarified prompt
             )
 
             prompt = f"""
